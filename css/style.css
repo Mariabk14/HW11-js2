@@ -1,0 +1,50 @@
+.timer-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#timer {
+  font-size: 32px;
+  font-variant-numeric: tabular-nums;
+}
+
+#timer.warning {
+  animation: colorFlow 1.5s infinite;
+}
+
+@keyframes colorFlow {
+  0% {
+    color: red;
+    text-shadow: 0 0 10px red;
+  }
+
+  25% {
+    color: orange;
+    text-shadow: 0 0 10px orange;
+  }
+
+  50% {
+    color: magenta;
+    text-shadow: 0 0 10px magenta;
+  }
+
+  75% {
+    color: blue;
+    text-shadow: 0 0 10px blue;
+  }
+
+  100% {
+    color: red;
+    text-shadow: 0 0 10px red;
+  }
+}
+
+button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
